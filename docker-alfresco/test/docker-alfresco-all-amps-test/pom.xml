@@ -70,6 +70,18 @@
             <version>${alfresco.googledocs.version}</version>
             <type>amp</type>
         </dependency>
+        <dependency>
+            <groupId>org.alfresco</groupId>
+            <artifactId>alfresco-rm-enterprise-repo</artifactId>
+            <version>${alfresco.records-management.version}</version>
+            <type>amp</type>
+        </dependency>
+        <dependency>
+            <groupId>org.alfresco</groupId>
+            <artifactId>alfresco-rm-enterprise-share</artifactId>
+            <version>${alfresco.records-management.version}</version>
+            <type>amp</type>
+        </dependency>
     </dependencies>
 
     <build>
@@ -258,6 +270,22 @@
                                     <groupId>org.alfresco.mediamanagement</groupId>
                                     <artifactId>alfresco-mm-share</artifactId>
                                     <version>${alfresco.mm.version}</version>
+                                    <type>amp</type>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/amps_share</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.alfresco</groupId>
+                                    <artifactId>alfresco-rm-enterprise-repo</artifactId>
+                                    <version>${alfresco.records-management.version}</version>
+                                    <type>amp</type>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/amps</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.alfresco</groupId>
+                                    <artifactId>alfresco-rm-enterprise-share</artifactId>
+                                    <version>${alfresco.records-management.version}</version>
                                     <type>amp</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/amps_share</outputDirectory>
